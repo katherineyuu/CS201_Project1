@@ -114,7 +114,7 @@ public class CelestialBody {
 		double sum = 0.0;
 		for (CelestialBody b : bodies) {
 			if (!b.equals(this)) {
-				sum += calcForceExertedByX(b) + calcForceExertedByX(b);
+				sum += calcForceExertedByX(b);
 			}
 		}
 		return sum;
@@ -124,7 +124,7 @@ public class CelestialBody {
 		double sum = 0.0;
 		for (CelestialBody b : bodies) {
 			if (!b.equals(this)) {
-				sum += calcForceExertedByY(b) + calcForceExertedByY(b);
+				sum += calcForceExertedByY(b);
 			}
 		}
 		return sum;
