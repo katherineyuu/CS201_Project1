@@ -122,6 +122,11 @@ public class CelestialBody {
 
 	public double calcNetForceExertedByY(CelestialBody[] bodies) {
 		double sum = 0.0;
+		for (CelestialBody b : bodies) {
+			if (!b.equals(this)) {
+				sum += calcForceExertedByY(b) + calcForceExertedByY(b);
+			}
+		}
 		return sum;
 	}
 
